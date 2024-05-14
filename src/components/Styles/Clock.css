@@ -1,0 +1,49 @@
+.clockBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    border: solid hsla(0, 0%, 0%, 0.144) 0.5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    
+    padding: 10px;
+    height: 170px;
+    width: 150px;
+    
+    color: #f4f5fa;
+    background: rgba(5, 5, 5, 0.4);
+    background-position: 0 90%;
+    backdrop-filter: blur(.2rem);
+    letter-spacing: 0.5px;
+    
+    transition: all 235ms ease-in-out;
+    
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .clockBox{
+      height: 100px !important;
+      width: 80px !important;
+      border-radius: 4px !important;
+      padding: 8px !important;
+      
+    }
+    
+    h1 {
+      font-size: 64px !important;
+    }
+  }
+  
+  .clockBox:hover {
+    background-color: hsla(0, 0%, 0%, 0.116);
+    border: solid hsla(0, 0%, 0%, 0.555) 0.5px;
+    box-shadow: rgba(0, 0, 0, .4) 0px 8px 8px -3px;
+    transform: translate3d(4px, 2px, 0);
+    backdrop-filter: blur(1rem);
+}
+
+

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Montserrat:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Quicksand:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Cute Font', sans-serif;
+}
+
+body {
+  background-color: #6366f2;
+  background: url(./img/cool-background.png) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: all 235ms ease-in-out;
+
+}
+
+button:disabled {
+
+  background: rgba(189, 189, 189, 0.55);
+}
+
+button:disabled:hover {
+
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background: #f4f5fa;
+  color: #666666;
+}
+
+
+h1 {
+  font-size: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+h3, legend {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  color: #f4f5fa;
+
+  font-weight: 300;
+}
+
+h4 {
+  color: hsla(0, 100%, 50%, 0.6);
+  font-size: 24px;
+}
+
+label {
+  color: #f4f5fa;
+  font-size: 24px;
+  
+}
+
+input {
+  color: #f4f5fa;
+  font-size: 24px;
+  border-radius: 4px;
+  background: none;
+  border: solid 1px #666666;
+
+  backdrop-filter: blur(1rem);
+  padding: .4rem;
+  margin-right: .2rem;
+}
+
+input::placeholder {
+  color: rgba(244, 245, 250, 0.777);
+
+}
+
+fieldset {
+  display: flex;
+  /* gap: 2rem; */
+  /* justify-content: space-around; */
+  border: rgba(244, 245, 250, 0.5) .2rem solid;
+  padding: 1rem 4rem;
+}
+
+input[type="radio"] {
+  accent-color: #bdbdbd;
+}
+
+nav {
+  display: flex;
+  height: 2rem;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+a {
+  font-size: x-large;
+  text-decoration: none;
+  color: #f4f5fa;
+  
+}
