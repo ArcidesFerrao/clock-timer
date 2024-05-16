@@ -9,16 +9,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/clock-timer",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <ClockApp />
       },
       {
-        path: "/timer",
+        path: "timer",
         element: <Timer />
       },
     ]

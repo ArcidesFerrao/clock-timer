@@ -11,12 +11,9 @@ export default function TimerDisplay({ expiryTimestamp }) {
     const {
         seconds,
         minutes,
-        hours,
-        days,
         isRunning,
         start,
         pause,
-        restart,
         resume
     } = useTimer({ expiryTimestamp, autoStart: false, onExpire: () => setExpired(true) });
     // console.log(expiryTimestamp);
@@ -34,7 +31,7 @@ export default function TimerDisplay({ expiryTimestamp }) {
                     <h2 className='seconds' >{seconds && seconds<10 || seconds==0 ? "0" + seconds : seconds }</h2>
                 </div>
                 <div className='timer-status' >
-                    {expired ? <h4>Time Expired... <NavLink to="/timer" className="reset-btn" >reset</NavLink></h4> : "" }
+                    {expired ? <h4>Time Expired... <NavLink to="" className="reset-btn" >reset</NavLink></h4> : "" }
                     {isRunning ? <Icon icon="iconoir:on-tag" width="2rem" height="2rem" /> : <Icon icon="iconoir:off-tag" width="2rem" height="2rem" />}
                 </div>
             </>

@@ -179,3 +179,18 @@
   color: #000000;
   text-decoration: underline;
 }
+
+.option-btns {
+  display: flex;
+  gap: 1rem;
+
+}
+
+.option-btns button {
+  background: none;
+  font-size: x-large;
+  border-radius: 4px;
+  border: #f4f5fa solid 1px;
+  color: #f4f5fa;
+  padding: 0 1rem;
+}
