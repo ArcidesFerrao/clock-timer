@@ -33,9 +33,10 @@
       
     }
     
-    h1 {
+    .clockBox h1 {
       font-size: 64px !important;
     }
+    
   }
   
   .clockBox:hover {

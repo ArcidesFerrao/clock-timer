@@ -22,11 +22,8 @@
 .select-button button {
   transition: all 500ms ease;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   border-radius: 50%;
   padding: 1rem;
-  /* background-color: rgba(5, 5, 5, 0.204); */
   border: none;
   color: #f4f5fa;
   background-color: hsla(0, 0%, 0%, 0.116);
@@ -48,12 +45,14 @@
 
 .timer-app {
   position: relative;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  display: grid;
+  grid-template-rows: 25% 75%;
+  grid-template-columns: 100%;
+  grid-template-areas: "title"
+    "content";
   align-items: center;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
   box-shadow: 12px 2rem 2rem rgba(0, 0, 0, .2);
   background-color: rgba(244, 245, 250, 0.2);
   backdrop-filter: blur(.4rem);
@@ -65,11 +64,24 @@
   transition: all 1s ease;
 }
 
+.timer-title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  color: #f4f5fa;
+}
+
+.dis-timer {
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-around;
+}
+
 .timer-display {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  gap: .4rem;
   color: #f4f5fa;
 }
 
@@ -78,7 +90,6 @@
   align-self: self-start;
 }
 .timer-display h2 {
-  font-size: 64px;
   align-self: self-start;
 }
 
@@ -98,7 +109,7 @@
   color: #f4f5fa;
 }
 
-.start-btn:hover {
+.start-btn:hover:enabled {
   background-color: hsla(0, 0%, 0%, 0.116);
   border: solid hsla(0, 0%, 0%, 0.555) 0.5px;
   box-shadow: rgba(0, 0, 0, .4) 0px 8px 8px -3px;
@@ -116,7 +127,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* color: #16de16; */
 }
 
 
@@ -156,8 +166,6 @@
 
 .nav-link {
   border: #f4f5fa solidd 1px;
-  
-  /* border-radius: 4px; */
   padding: 0 2rem;
   background-color: rgba(244, 245, 250, 0.2);
 }
@@ -182,15 +190,7 @@
 
 .option-btns {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 
-}
-
-.option-btns button {
-  background: none;
-  font-size: x-large;
-  border-radius: 4px;
-  border: #f4f5fa solid 1px;
-  color: #f4f5fa;
-  padding: 0 1rem;
 }
