@@ -1,19 +1,7 @@
-import { useEffect, useState } from 'react';
 import './App.css';
-import getCurrentTime from './components/functions/getCurrentTime';
 import { NavLink, Outlet } from 'react-router-dom';
 
 function App() {
-
-  const [time, setTime] = useState();
-
-  useEffect(() => {
-      const interval = setInterval(() => {
-          const currentTime = getCurrentTime;
-          setTime(currentTime);        
-      }, 1000);
-      return () => clearInterval(interval);
-  }, []);
 
   return (
     <>

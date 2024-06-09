@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TimerDisplay from './TimerDisplay';
 import { Icon } from "@iconify-icon/react";
 

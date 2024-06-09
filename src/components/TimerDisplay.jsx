@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTimer } from "react-timer-hook";
 import { Icon } from "@iconify-icon/react";
 import { NavLink } from 'react-router-dom';
@@ -16,7 +16,7 @@ export default function TimerDisplay({ expiryTimestamp }) {
         pause,
         resume
     } = useTimer({ expiryTimestamp, autoStart: false, onExpire: () => setExpired(true) });
-    // console.log(expiryTimestamp);
+    console.log(expiryTimestamp);
     
   return (
     <>
