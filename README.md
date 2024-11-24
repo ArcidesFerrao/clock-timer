@@ -2,6 +2,8 @@
 
 A lightweight and responsive Clock Timer application built with **HTML**, **CSS**, and **JavaScript**. This project offers a sleek and intuitive user interface for tracking time, making it ideal for productivity, workouts, or personal projects.
 
+![Clock Timer](clock-timer.png) ![Clock Timer](clock-timer-2.png)
+
 ## Features
 
 - **Digital Clock**: Displays the current time in a clear and elegant format.
